@@ -28,8 +28,8 @@ a {
 }
 
 .footerCab img {
-    width: 2213px;
-    height: 350px;
+    width: 100%;
+    height: auto;
 }
 
 .dimensao {
@@ -44,6 +44,7 @@ main {
 .main-content {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .main-content img {
@@ -54,7 +55,7 @@ main {
 }
 
 .text-content h1, .text-content h2 {
-    margin: 10PX;
+    margin: 10px;
 }
 
 .text-content h1 {
@@ -75,15 +76,13 @@ main {
 }
 
 .footerRod {
-    display:flex;
-    justify-content: 100px space-between;
-    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
 }
 
 .footerRod a img {
-    justify-content: center;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -92,13 +91,13 @@ main {
     text-align: center;
 }
 
-.footerRod a{
+.footerRod a {
     justify-content: center;
     margin: 10px;
     text-align: center;
 }
 
-.footerRod p{
+.footerRod p {
     margin-top: 2px;
-
+    color: white;
 }

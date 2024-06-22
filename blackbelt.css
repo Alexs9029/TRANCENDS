@@ -11,12 +11,14 @@ ul {
     list-style-type: none;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 a {
     color: rgb(112, 104, 104);
     text-decoration: none;
     text-align: center;
+    display: block;
 }
 
 .headerlink img {
@@ -28,8 +30,8 @@ a {
 }
 
 .footerCab img {
-    width: 2213px;
-    height: 350px;
+    width: 100%;
+    height: auto;
 }
 
 .dimensao {
@@ -43,61 +45,99 @@ main {
 
 .main-content {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .main-content img {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border: 5px solid rgb(255, 255, 255);
-    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    text-align: center;
 }
 
 .text-content h1, .text-content h2 {
-    margin: 10PX;
+    margin: 10px 0;
 }
 
 .text-content h1 {
-    font-size: 60px;
+    font-size: 2.5em;
     color: white;
     margin-bottom: 10px;
 }
 
 .text-content h2 {
-    font-size: 45px;
+    font-size: 2em;
     color: white;
     margin-bottom: 10px;
 }
 
 .text-content p {
     color: white;
-    font-size: 30px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
+
 .footerRod {
-    display:flex;
-    justify-content: 100px space-between;
-    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
 }
 
 .footerRod a img {
-    justify-content: center;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 5px solid rgb(185, 183, 173);
-    margin: 20px;
-    text-align: center;
-}
-
-.footerRod a{
-    justify-content: center;
     margin: 10px;
-    text-align: center;
 }
 
-.footerRod p{
-    margin-top: 2px;
+.footerRod a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
 
+.footerRod p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .dimensao {
+        padding: 0 50px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dimensao, main {
+        padding: 0 20px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .headerlink img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid rgb(185, 183, 173);
+        margin: 10px;
+    }
 }
