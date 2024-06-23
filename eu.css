@@ -26,10 +26,10 @@ header img {
     height: 50px;
     border-radius: 50%;
     border: 5px solid rgb(185, 173, 173);
-    margin: 10px;;
+    margin: 10px;
 }
 
-header p{
+header p {
     font-size: 20px;
 }
 
@@ -45,7 +45,6 @@ header p{
 .footerRod {
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
     align-items: center;
     padding: 10px;
 }
@@ -99,7 +98,6 @@ header p{
     }
 
     .footerRod a img {
-        
         width: 60px;
         height: 60px;
         margin: 5px;

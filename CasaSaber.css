@@ -101,3 +101,89 @@ main {
     margin-top: 2px;
     color: white;
 }
+
+
+@media (max-width: 1024px) {
+    .dimensao, main {
+        padding: 0 50px;
+    }
+
+    .text-content h1 {
+        font-size: 2em;
+    }
+
+    .text-content h2 {
+        font-size: 1.8em;
+    }
+
+    .text-content p {
+        font-size: 1em;
+    }
+
+    .footerRod a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dimensao, main {
+        padding: 0 20px;
+    }
+
+    .text-content h1 {
+        font-size: 1.8em;
+    }
+
+    .text-content h2 {
+        font-size: 1.6em;
+    }
+
+    .text-content p {
+        font-size: 0.9em;
+    }
+
+    .footerRod a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .headerlink img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dimensao, main {
+        padding: 0 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .text-content h1 {
+        font-size: 1.5em;
+    }
+
+    .text-content h2 {
+        font-size: 1.3em;
+    }
+
+    .text-content p {
+        font-size: 0.8em;
+    }
+
+    .footerRod a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .headerlink img {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+}
