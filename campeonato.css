@@ -2,7 +2,7 @@ body {
     background-color: black;
     color: rgb(72, 70, 70);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 ul {
@@ -21,9 +21,9 @@ a {
     display: block;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
+.headerlink img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 5px solid rgb(185, 183, 173);
     margin: 10px;
@@ -38,10 +38,62 @@ header img {
     padding: 0px 150px;
 }
 
+main {
+    align-items: flex-start;
+    padding: 0px 150px;
+    text-align: initial;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 25%;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.text-content h1, .text-content h2 {
+    margin: 10px 0;
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text-content h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
 .footerRod {
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
     align-items: center;
     padding: 10px;
 }
@@ -63,8 +115,8 @@ header img {
 }
 
 .footerRod p {
-    font-size: 20px;
     margin-top: 5px;
+    font-size: 1em;
 }
 
 /* Media Queries for Responsive Design */
@@ -80,7 +132,7 @@ header img {
 }
 
 @media (max-width: 480px) {
-    .dimensao {
+    .dimensao, main {
         padding: 0 20px;
     }
 
@@ -88,21 +140,12 @@ header img {
         font-size: 16px;
     }
 
-    header img {
-        width: 100px;
-        height: 100px;
-        margin: 5px;
-    }
-
-    .footerRod a img {
-        
-        width: 40px;
-        height: 40px;
-        margin: 5px;
-    }
-
-    .footerRod p {
-        font-size: 16px;
-        margin-top: 3px;
+    .headerlink img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid rgb(185, 183, 173);
+        margin: 10px;
     }
 }
+

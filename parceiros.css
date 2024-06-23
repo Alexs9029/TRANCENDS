@@ -1,0 +1,160 @@
+body {
+    background-color: black;
+    color: rgb(72, 70, 70);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+a {
+    color: rgb(112, 104, 104);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.headerlink img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(185, 183, 173);
+    margin: 10px;
+}
+
+.footerCab img {
+    width: 100%;
+    height: auto;
+}
+
+.dimensao {
+    padding: 0px 150px;
+}
+
+main {
+    align-items: flex-start;
+    padding: 0px 150px;
+    text-align: initial;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.image-container img {
+    width: 500px;
+    max-width: 500px;
+    height: auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 25%;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.text-content h1, .text-content h2 {
+    margin: 10px 0;
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text-content h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footerRod {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.footerRod a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(185, 183, 173);
+    margin: 10px;
+}
+
+.footerRod a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.footerRod p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .dimensao {
+        padding: 0 50px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    .image-container img {
+        width: 250px;
+        height: 250px; /* Ajusta o tamanho das imagens para 70% da largura do container em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .dimensao, main {
+        padding: 0 20px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .headerlink img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid rgb(185, 183, 173);
+        margin: 10px;
+    }
+
+    .image-container img {
+        width: 250px;
+        height: 250px; /* Ajusta o tamanho das imagens para 100% da largura do container em telas muito pequenas */
+    }
+}
