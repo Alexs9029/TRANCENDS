@@ -3,6 +3,8 @@ body {
     color: rgb(72, 70, 70);
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -12,6 +14,7 @@ ul {
     align-items: center;
     padding: 10px;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 a {
@@ -35,12 +38,11 @@ a {
 }
 
 .dimensao {
-    padding: 0px 150px;
+    padding: 0 150px;
 }
 
 main {
-    align-items: flex-start;
-    padding: 0px 150px;
+    padding: 0 150px;
     text-align: initial;
 }
 
@@ -48,6 +50,7 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .image-container {
@@ -63,6 +66,7 @@ main {
     height: auto;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 25%;
+    margin-bottom: 10px;
 }
 
 .text-content {
@@ -96,6 +100,7 @@ main {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .footerRod a img {
@@ -121,31 +126,87 @@ main {
 
 /* Media Queries for Responsive Design */
 
-@media (max-width: 768px) {
-    .dimensao {
+@media (max-width: 1024px) {
+    .dimensao, main {
         padding: 0 50px;
     }
 
-    body {
-        font-size: 20px;
+    .text-content h1 {
+        font-size: 2em;
+    }
+
+    .text-content h2 {
+        font-size: 1.8em;
+    }
+
+    .text-content p {
+        font-size: 1em;
+    }
+
+    .footerRod a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dimensao, main {
+        padding: 0 20px;
+    }
+
+    .text-content h1 {
+        font-size: 1.8em;
+    }
+
+    .text-content h2 {
+        font-size: 1.6em;
+    }
+
+    .text-content p {
+        font-size: 0.9em;
+    }
+
+    .footerRod a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .headerlink img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 5px solid rgb(185, 183, 173);
+        margin: 5px;
     }
 }
 
 @media (max-width: 480px) {
     .dimensao, main {
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
-    body {
-        font-size: 16px;
+    .text-content h1 {
+        font-size: 1.5em;
+    }
+
+    .text-content h2 {
+        font-size: 1.3em;
+    }
+
+    .text-content p {
+        font-size: 0.8em;
+    }
+
+    .footerRod a img {
+        width: 25px;
+        height: 25px;
     }
 
     .headerlink img {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
-        border: 5px solid rgb(185, 183, 173);
-        margin: 10px;
+        border: 3px solid rgb(185, 183, 173);
+        margin: 3px;
     }
 }
-
