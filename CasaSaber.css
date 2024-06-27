@@ -3,6 +3,8 @@ body {
     color: rgb(72, 70, 70);
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -33,11 +35,11 @@ a {
 }
 
 .dimensao {
-    padding: 0px 150px;
+    padding: 0 10%;
 }
 
 main {
-    padding: 0px 150px;
+    padding: 0 10%;
     text-align: initial;
 }
 
@@ -45,34 +47,35 @@ main {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-content img {
-    width: 500px;
-    height: 500px;
+    max-width: 100%;
+    height: auto;
     border: 5px solid rgb(255, 255, 255);
-    margin-right: 20px;
+    margin: 10px;
+    flex: 1 1 300px; /* Allow images to grow and shrink */
 }
 
 .text-content h1, .text-content h2 {
     margin: 10px;
+    color: white;
 }
 
 .text-content h1 {
-    font-size: 60px;
-    color: white;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
 .text-content h2 {
-    font-size: 45px;
-    color: white;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .text-content p {
     color: white;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 .footerRod {
@@ -80,6 +83,7 @@ main {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap; /* Allow footer items to wrap */
 }
 
 .footerRod a img {
@@ -88,11 +92,9 @@ main {
     border-radius: 50%;
     border: 5px solid rgb(185, 183, 173);
     margin: 20px;
-    text-align: center;
 }
 
 .footerRod a {
-    justify-content: center;
     margin: 10px;
     text-align: center;
 }
@@ -102,10 +104,9 @@ main {
     color: white;
 }
 
-
 @media (max-width: 1024px) {
     .dimensao, main {
-        padding: 0 50px;
+        padding: 0 5%;
     }
 
     .text-content h1 {
@@ -128,7 +129,12 @@ main {
 
 @media (max-width: 768px) {
     .dimensao, main {
-        padding: 0 20px;
+        padding: 0 2%;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .text-content h1 {
@@ -157,7 +163,7 @@ main {
 
 @media (max-width: 480px) {
     .dimensao, main {
-        padding: 0 10px;
+        padding: 0 1%;
     }
 
     body {

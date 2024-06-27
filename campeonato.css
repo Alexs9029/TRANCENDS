@@ -61,9 +61,9 @@ main {
 }
 
 .image-container img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+    width: 100%; /* Imagem ocupará toda a largura do container */
+    max-width: 100%; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
     border: 5px solid rgb(255, 255, 255);
     border-radius: 25%;
     margin-bottom: 10px;

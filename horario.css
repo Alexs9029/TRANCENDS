@@ -1,3 +1,4 @@
+/* Estilos base */
 body {
     background-color: black;
     color: rgb(72, 70, 70);
@@ -28,77 +29,143 @@ a {
 }
 
 .footerCab img {
-    width: 2213px;
-    height: 350px;
+    width: 100%; /* Ajustado para ocupar 100% da largura */
+    height: auto; /* Para manter a proporção da imagem */
 }
 
 .dimensao {
-    padding: 0px 150px;
+    padding: 0 20px; /* Ajustado para espaçamento menor em telas menores */
 }
 
 main {
-    padding: 0px 150px;
+    padding: 0 20px; /* Ajustado para espaçamento menor em telas menores */
     text-align: initial;
 }
 
 .main-content {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
     align-items: flex-start;
+    justify-content: space-between; /* Distribuição uniforme dos elementos */
 }
 
 .main-content img {
-    width: 500px;
-    height: 500px;
+    max-width: 100%; /* Para garantir que a imagem não ultrapasse o contêiner */
+    height: auto; /* Para manter a proporção da imagem */
     border: 5px solid rgb(255, 255, 255);
-    margin-right: 20px;
+    margin-bottom: 20px; /* Espaçamento inferior aumentado */
 }
 
 .text-content h1, .text-content h2 {
-    margin: 10PX;
+    margin: 10px 0;
 }
 
 .text-content h1 {
-    font-size: 60px;
+    font-size: 4rem; /* Ajustado para uma unidade de medida mais flexível */
     color: white;
     margin-bottom: 10px;
 }
 
 .text-content h2 {
-    font-size: 45px;
+    font-size: 3rem; /* Ajustado para uma unidade de medida mais flexível */
     color: white;
     margin-bottom: 10px;
 }
 
 .text-content p {
     color: white;
-    font-size: 30px;
+    font-size: 1.5rem; /* Ajustado para uma unidade de medida mais flexível */
+    margin-bottom: 20px; /* Espaçamento inferior aumentado */
 }
 
 .footerRod {
-    display:flex;
-    justify-content: 100px space-between;
-    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Espaçamento uniforme entre os itens */
     align-items: center;
     padding: 10px;
 }
 
 .footerRod a img {
-    justify-content: center;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 5px solid rgb(185, 183, 173);
-    margin: 20px;
-    text-align: center;
-}
-
-.footerRod a{
-    justify-content: center;
     margin: 10px;
-    text-align: center;
 }
 
-.footerRod p{
-    margin-top: 2px;
+.footerRod a {
+    text-align: center;
+    color: rgb(112, 104, 104);
+    text-decoration: none;
+}
 
+.hr p {
+    color: red;
+    text-align: left;
+    font-size: 30px;
+
+}
+
+.hr img{
+    height: 600px;
+  justify-content: left;
+}
+
+.footerRod p {
+    margin: 0; /* Removido margin-top para melhor alinhamento */
+}
+
+/* Media queries para ajustes responsivos */
+@media screen and (min-width: 768px) {
+    .dimensao {
+        padding: 0 50px;
+    }
+
+    main {
+        padding: 0 50px;
+    }
+
+    .main-content img {
+        width: 45%; /* Ajustado para ocupar 45% da largura em telas maiores */
+        margin-right: 2%; /* Espaçamento direito reduzido */
+    }
+
+    .text-content h1 {
+        font-size: 5rem; /* Ajustado para uma unidade de medida maior em telas maiores */
+    }
+
+    .text-content h2 {
+        font-size: 3.5rem; /* Ajustado para uma unidade de medida maior em telas maiores */
+    }
+
+    .text-content p {
+        font-size: 1.8rem; /* Ajustado para uma unidade de medida maior em telas maiores */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .dimensao {
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .main-content img {
+        width: 100%; /* Ajustado para ocupar 100% da largura em telas menores */
+        margin-bottom: 10px; /* Espaçamento inferior reduzido */
+    }
+
+    .text-content h1 {
+        font-size: 3rem; /* Ajustado para uma unidade de medida menor em telas menores */
+    }
+
+    .text-content h2 {
+        font-size: 2.5rem; /* Ajustado para uma unidade de medida menor em telas menores */
+    }
+
+    .text-content p {
+        font-size: 1.3rem; /* Ajustado para uma unidade de medida menor em telas menores */
+    }
 }
