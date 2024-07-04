@@ -108,6 +108,42 @@ main {
     margin: 10px;
 }
 
+/* Ajuste para a imagem VIP */
+.hr img {
+    height: auto; /* Manter a altura automática para proporção */
+    width: 25%; /* Ajustado para 50% da largura do contêiner pai */
+    max-width: 50%; /* Garantir que a imagem não ultrapasse seu contêiner */
+    border: 5px solid rgb(255, 255, 255);
+    margin-bottom: 20px; /* Ajustar conforme necessário */
+}
+
+/* Ajuste para o link dentro da classe .hr */
+.hr a {
+    text-align: center; /* Ajuste o alinhamento do texto conforme necessário */
+    
+    color: red; /* Cor do texto para contrastar com o fundo */
+    text-decoration: none; /* Remover decoração de link, se necessário */
+}
+
+/* Ajuste para o parágrafo dentro da classe .hr */
+.hr p {
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 10px; /* Ajuste a margem conforme necessário */
+
+    color:red;
+
+    margin-bottom: 0; /* Remover margem inferior para melhor alinhamento */
+
+    justify-content: center;
+}
+
+/* Ajuste para a classe .hr em geral */
+.hr {
+    text-align: center; /* Ajuste o alinhamento conforme necessário */
+    margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+}
+
+
 .footerRod p {
     margin-top: 5px;
     font-size: 1em;

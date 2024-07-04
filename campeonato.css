@@ -1,3 +1,4 @@
+/* Estilos globais para o corpo da página */
 body {
     background-color: black;
     color: rgb(72, 70, 70);
@@ -7,6 +8,7 @@ body {
     padding: 0;
 }
 
+/* Estilos para a lista de navegação */
 ul {
     display: flex;
     justify-content: space-between;
@@ -17,6 +19,7 @@ ul {
     margin: 0;
 }
 
+/* Estilos para os links */
 a {
     color: rgb(112, 104, 104);
     text-decoration: none;
@@ -24,6 +27,7 @@ a {
     display: block;
 }
 
+/* Estilos para as imagens nos links de navegação */
 .headerlink img {
     width: 50px;
     height: 50px;
@@ -32,20 +36,24 @@ a {
     margin: 10px;
 }
 
+/* Estilos para o logotipo no rodapé */
 .footerCab img {
     width: 100%;
     height: auto;
 }
 
+/* Estilos para a seção principal da página */
 .dimensao {
     padding: 0 150px;
 }
 
+/* Estilos para a seção principal */
 main {
     padding: 0 150px;
     text-align: initial;
 }
 
+/* Estilos para o conteúdo principal */
 .main-content {
     display: flex;
     justify-content: space-around;
@@ -53,6 +61,7 @@ main {
     margin-bottom: 20px;
 }
 
+/* Estilos para os containers de imagem e texto */
 .image-container {
     display: flex;
     flex-direction: column;
@@ -60,6 +69,7 @@ main {
     margin: 10px;
 }
 
+/* Estilos para as imagens nos containers */
 .image-container img {
     width: 100%; /* Imagem ocupará toda a largura do container */
     max-width: 100%; /* Limita a largura máxima da imagem */
@@ -69,6 +79,7 @@ main {
     margin-bottom: 10px;
 }
 
+/* Estilos para o conteúdo de texto */
 .text-content {
     text-align: center;
 }
@@ -95,6 +106,7 @@ main {
     margin-bottom: 10px;
 }
 
+/* Estilos para o rodapé com links sociais */
 .footerRod {
     display: flex;
     justify-content: space-around;
@@ -103,6 +115,7 @@ main {
     flex-wrap: wrap;
 }
 
+/* Estilos para as imagens nos links sociais */
 .footerRod a img {
     width: 50px;
     height: 50px;
@@ -111,6 +124,7 @@ main {
     margin: 10px;
 }
 
+/* Estilos para os links sociais no rodapé */
 .footerRod a {
     display: flex;
     flex-direction: column;
@@ -124,7 +138,7 @@ main {
     font-size: 1em;
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries para design responsivo */
 
 @media (max-width: 1024px) {
     .dimensao, main {
@@ -189,24 +203,5 @@ main {
         font-size: 1.5em;
     }
 
-    .text-content h2 {
-        font-size: 1.3em;
-    }
-
-    .text-content p {
-        font-size: 0.8em;
-    }
-
-    .footerRod a img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .headerlink img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 3px solid rgb(185, 183, 173);
-        margin: 3px;
-    }
+    /* Mais estilos para tamanhos menores de tela */
 }
