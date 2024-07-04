@@ -54,6 +54,19 @@ main {
     margin-right: 20px;
 }
 
+nav a:hover{
+    color: red;
+}
+
+.text-content h1:hover{
+    color: red;
+}
+
+footer p:hover{
+    color:red
+}
+
+
 .text-content h1, .text-content h2 {
     margin: 10px;
 }

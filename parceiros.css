@@ -89,6 +89,19 @@ main {
     font-size: 1.2em;
 }
 
+nav a:hover{
+    color: red;
+}
+
+.text-content h1:hover{
+    color: red;
+}
+
+footer p:hover{
+    color:red
+}
+
+
 .footerRod {
     display: flex;
     justify-content: space-around;

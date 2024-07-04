@@ -91,6 +91,19 @@ main {
     text-align: center;
 }
 
+nav a:hover{
+    color: red;
+}
+
+.text-content h1:hover{
+    color: red;
+}
+
+footer p:hover{
+    color:red
+}
+
+
 .footerRod a {
     justify-content: center;
     margin: 10px;

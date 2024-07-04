@@ -105,6 +105,18 @@ main {
     font-size: 30px;
 }
 
+nav a:hover{
+    color: red;
+}
+
+.text-content h1:hover{
+    color: red;
+}
+
+footer p:hover{
+    color:red
+}
+
 .hr img {
     height: 250px;
     width: 250px;

@@ -45,6 +45,7 @@ main {
 }
 
 .main-content {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,6 +58,18 @@ main {
     height: auto;
     border: 5px solid rgb(255, 255, 255);
     margin-bottom: 20px;
+}
+
+nav a:hover{
+    color: red;
+}
+
+.text-content h1:hover{
+    color: red;
+}
+
+footer p:hover{
+    color:red
 }
 
 .text-content {

@@ -27,6 +27,19 @@ a {
     display: block;
 }
 
+nav a:hover{
+    color: red;
+}
+
+.text-content h1:hover{
+    color: red;
+}
+
+footer p:hover{
+    color:red
+}
+
+
 /* Estilos para imagens do cabeçalho */
 header img {
     width: 150px;

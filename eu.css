@@ -70,6 +70,19 @@ header p {
     margin-top: 5px;
 }
 
+nav a:hover{
+    color: red;
+}
+
+.text-content h1:hover{
+    color: red;
+}
+
+footer p:hover{
+    color:red
+}
+
+
 /* Media Queries for Responsive Design */
 
 @media (max-width: 768px) {

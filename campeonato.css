@@ -138,6 +138,19 @@ main {
     font-size: 1em;
 }
 
+nav a:hover{
+    color: red;
+}
+
+.text-content h1:hover{
+    color: red;
+}
+
+footer p:hover{
+    color:red
+}
+
+
 /* Media Queries para design responsivo */
 
 @media (max-width: 1024px) {

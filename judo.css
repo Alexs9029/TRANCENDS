@@ -39,6 +39,19 @@ header img {
     padding: 0px 150px;
 }
 
+nav a:hover{
+    color: red;
+}
+
+.text-content h1:hover{
+    color: red;
+}
+
+footer p:hover{
+    color:red
+}
+
+
 .footerRod {
     display: flex;
     justify-content: space-around;
