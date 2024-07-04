@@ -1,10 +1,14 @@
+/* Estilos globais */
 body {
     background-color: black;
     color: rgb(72, 70, 70);
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 
+/* Estilos para listas de navegação */
 ul {
     display: flex;
     justify-content: space-between;
@@ -12,8 +16,10 @@ ul {
     align-items: center;
     padding: 10px;
     flex-wrap: wrap;
+    margin: 0;
 }
 
+/* Estilos para links */
 a {
     color: rgb(112, 104, 104);
     text-decoration: none;
@@ -21,6 +27,7 @@ a {
     display: block;
 }
 
+/* Estilos para imagens do cabeçalho */
 header img {
     width: 150px;
     height: 150px;
@@ -29,23 +36,26 @@ header img {
     margin: 10px;
 }
 
+/* Estilos para imagem do logo no rodapé */
 .footerCab img {
     width: 100%;
     height: auto;
 }
 
+/* Estilos para o contêiner principal */
 .dimensao {
-    padding: 0px 150px;
+    padding: 0 150px;
 }
 
+/* Estilos para o rodapé */
 .footerRod {
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
     align-items: center;
     padding: 10px;
 }
 
+/* Estilos para imagens no rodapé */
 .footerRod a img {
     width: 50px;
     height: 50px;
@@ -54,6 +64,7 @@ header img {
     margin: 10px;
 }
 
+/* Estilos para os links no rodapé */
 .footerRod a {
     display: flex;
     flex-direction: column;
@@ -62,13 +73,13 @@ header img {
     margin: 10px;
 }
 
+/* Estilos para o texto no rodapé */
 .footerRod p {
     font-size: 20px;
     margin-top: 5px;
 }
 
-/* Media Queries for Responsive Design */
-
+/* Media Queries para responsividade */
 @media (max-width: 768px) {
     .dimensao {
         padding: 0 50px;
@@ -95,7 +106,6 @@ header img {
     }
 
     .footerRod a img {
-        
         width: 40px;
         height: 40px;
         margin: 5px;

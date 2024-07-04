@@ -1,10 +1,15 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     color: rgb(72, 70, 70);
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
-    margin: 0;
-    padding: 0;
 }
 
 ul {
@@ -14,7 +19,6 @@ ul {
     align-items: center;
     padding: 10px;
     flex-wrap: wrap;
-    margin: 0;
 }
 
 a {
@@ -38,12 +42,11 @@ a {
 }
 
 .dimensao {
-    padding: 0px 150px;
+    padding: 0 150px;
 }
 
 main {
-    align-items: flex-start;
-    padding: 0px 150px;
+    padding: 0 150px;
     text-align: initial;
 }
 
@@ -72,26 +75,18 @@ main {
     text-align: center;
 }
 
-.text-content h1, .text-content h2 {
+.text-content h1, .text-content p {
     margin: 10px 0;
 }
 
 .text-content h1 {
     font-size: 2.5em;
     color: white;
-    margin-bottom: 10px;
-}
-
-.text-content h2 {
-    font-size: 2em;
-    color: white;
-    margin-bottom: 10px;
 }
 
 .text-content p {
     color: white;
     font-size: 1.2em;
-    margin-bottom: 10px;
 }
 
 .footerRod {
@@ -152,10 +147,6 @@ main {
         font-size: 2em;
     }
 
-    .text-content h2 {
-        font-size: 1.5em;
-    }
-
     .text-content p {
         font-size: 1em;
     }
@@ -180,6 +171,10 @@ main {
     }
 
     .text-content h1 {
-        font-size: 1.
+        font-size: 1.5em;
+    }
+
+    .text-content p {
+        font-size: 0.8em;
     }
 }

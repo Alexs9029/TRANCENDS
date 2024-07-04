@@ -103,12 +103,18 @@ main {
     color: red;
     text-align: left;
     font-size: 30px;
-
 }
 
-.hr img{
-    height: 600px;
-  justify-content: left;
+.hr img {
+    height: 250px;
+    width: 250px;
+    justify-content: left;
+}
+
+.hr {
+    width: 50%;
+    height: auto;
+    text-align: left;
 }
 
 .footerRod p {
