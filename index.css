@@ -39,6 +39,9 @@ footer p:hover{
     color:red
 }
 
+audio {
+    display: none;
+}
 
 /* Estilos para imagens do cabeçalho */
 header img {
